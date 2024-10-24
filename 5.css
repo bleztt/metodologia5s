@@ -1,0 +1,140 @@
+/* Estilos generales */
+body {
+    font-family: 'Verdana', sans-serif; /* Cambié la fuente */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    background-image: linear-gradient(45deg, #ffcccb 25%, #ffb6c1 25%, #ffb6c1 50%, #ffcccb 50%, #ffcccb 75%, #ffb6c1 75%, #ffb6c1 100%);
+    background-size: 28.28px 28.28px; /* Patrón de fondo */
+    text-shadow: 1px 1px 0 #ff9999; /* Trazo salmón a todas las letras */
+}
+
+header {
+    background: linear-gradient(90deg, rgba(255, 105, 180, 0.8), rgba(238, 174, 202, 0.8));
+    padding: 20px;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header ul li button {
+    background-color: #ff69b4; /* Color de fondo para los botones */
+    border: none;
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Efectos de transición */
+    text-shadow: 1px 1px 0 #ff9999; /* Trazo salmón en texto de botones */
+}
+
+header ul li button:hover {
+    background-color: #ff1493; /* Efecto hover */
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+h1 {
+    font-size: 3em;
+    color: #4b0082;
+    text-shadow: 2px 2px 4px #fff, 0 0 25px #ff1493, 0 0 5px #ff1493;
+    animation: move 2s infinite alternate; /* Efecto de movimiento */
+}
+
+/* Efecto de movimiento */
+@keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+/* Estilo para secciones */
+h2, h3 {
+    color: #8a2be2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0 20px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Estilo de tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #ddd;
+}
+
+th {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+td {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s;
+}
+
+td:hover {
+    background-color: #ffe4e1; /* Efecto hover en celdas */
+}
+
+/* Estilos de imágenes */
+img {
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05); /* Efecto de zoom en imágenes */
+}
+
+/* Footer */
+footer {
+    background-color: #4b0082;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    header ul li {
+        display: block; /* Cambiar a bloque en pantallas pequeñas */
+        margin: 10px 0;
+    }
+
+    p, h2, h3 {
+        font-size: 1em;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

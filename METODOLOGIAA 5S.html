@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="5.css">
+    <title>Métodologia 5'S</title>
+    <style>
+        /* Estilo general para las celdas de la tabla */
+        td, th {
+            padding: 10px;
+            border-radius: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+            text-align: center;
+        }
+
+        /* Efecto de flotación */
+        td:hover, th:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo para el emoji */
+        .like-monkey {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 50px; /* Ajusta el tamaño según prefieras */
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .like-monkey:hover {
+            transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+        }
+
+        /* Estilo para la imagen gigante */
+        .large-image {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .large-image img {
+            max-width: 100%; /* Asegura que la imagen no desborde el contenedor */
+            height: auto; /* Mantiene la proporción */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Métodologia 5'S</h1>
+<header>
+    <ul style="list-style-type: none; padding: 0; text-align: center;">
+        <li style="display: inline; margin: 0 10px;">
+            <button onclick="document.getElementById('que-es').scrollIntoView();">¿Qué es la Metodología 5S?</button>
+        </li>
+        <li style="display: inline; margin: 0 10px;">
+            <button onclick="document.getElementById('en-que-consiste').scrollIntoView();">¿En qué consiste?</button>
+        </li>
+        <li style="display: inline; margin: 0 10px;">
+            <button onclick="document.getElementById('como-implementar').scrollIntoView();">¿Cómo implementarla?</button>
+        </li>
+    </ul>
+</header>
+
+<p id="que-es">La metodología 5S es una herramienta de gestión japonesa que busca mejorar la organización, eficiencia y seguridad en el lugar de trabajo. Su propósito es optimizar el espacio de trabajo, reducir desperdicios y aumentar la productividad mediante un entorno limpio y ordenado.</p>
+
+<h2 id="en-que-consiste">¿En qué consiste?</h2>
+<p>La metodología 5S consiste en cinco pasos orientados a mejorar la organización y eficiencia del lugar de trabajo.</p>
+<table border="3">
+    <tr>
+        <th style="background-color:rgb(145, 41, 142);">Seiri (Clasificar)</th>
+        <th style="background-color:rgb(128, 74, 185);">Seiton (Ordenar)</th>
+        <th style="background-color:rgb(206, 138, 212);">Seiso (Limpiar)</th>
+        <th style="background-color:rgb(181, 119, 190);">Seiketsu (Estandarizar)</th>
+        <th style="background-color:rgb(152, 89, 152);">Shitsuke (Disciplina)</th>
+    </tr>
+    <tr>
+        <td style="background-color:rgb(173, 67, 143);">Identifica lo necesario de lo innecesario. 
+            <br>Este paso reduce el desorden y facilita un entorno
+            <br> de trabajo más eficiente.
+        </td>
+        <td style="background-color: rgb(191, 117, 180);">Una vez clasificados los elementos útiles
+            <br> se deben organizar de manera lógica y accesible.
+        </td>
+        <td style="background-color:rgb(226, 129, 221);">Este paso incluye la limpieza del lugar,
+            <br> ayudando a identificar problemas como
+            <br> fugas o desgastes.
+        </td>
+        <td style="background-color:rgb(145, 54, 145);">Este paso consiste en desarrollar normas y procedimientos que
+            <br> aseguren que las prácticas se mantengan.
+        </td>
+        <td style="background-color:rgb(186, 84, 180);">Entrenar al personal para seguir los estándares establecidos y
+            <br> promover una mentalidad de mejora continua.
+        </td>
+    </tr>
+</table>
+
+<h3 id="como-implementar">¿Cómo implementarlo?</h3>
+<table border="2">
+    <tr>
+        <th style="background-color:rgb(224, 140, 224);">Preparación y Capacitación</th>
+        <th style="background-color:rgb(219, 158, 219);">Evaluación Inicial</th>
+        <th style="background-color:rgb(190, 103, 190);">Ejecutar cada etapa</th>
+        <th style="background-color:rgb(173, 110, 179);">Monitoreo y Ajuste</th>
+        <th style="background-color:rgb(171, 87, 204);">Cultura de Mejora Continua</th>
+    </tr>
+    <tr>
+        <td style="background-color:rgb(199, 126, 199);">Informa a todo el equipo sobre el objetivo de las 5S y cómo funcionará.</td>
+        <td style="background-color:rgb(128, 58, 110);">Haz un diagnóstico del área de trabajo. Identifica problemas de organización.</td>
+        <td style="background-color:rgb(232, 183, 241);">Implementa cada uno de los pasos del método.</td>
+        <td style="background-color:rgb(236, 148, 199);">Realiza seguimientos periódicos para evaluar la efectividad de las 5S.</td>
+        <td style="background-color:rgb(214, 151, 211);">Fomenta una cultura en la que todos estén comprometidos con la mejora continua.</td>
+    </tr>
+</table>
+
+<!-- Apartado para la imagen gigante -->
+<div class="large-image">
+    <img src="URL_DE_TU_IMAGEN" alt="Descripción de la imagen">
+</div>
+
+<footer>
+    CBTis 258 3B PROGRAMACION T.V
+</footer>
+
+<div class="like-monkey">🐒👍</div> <!-- Emoji del mono haciendo "like" -->
+
+</body>
+</html>
